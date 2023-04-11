@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>OLIVER ARÉVALO</h1>
+				</section>
+				<section>
+					<section>
+						Archivo Plano
+					</section>
+					<section>
+						Los archivos planos son una colección de información que está almacenada y es accedida de forma organizada en una base de datos. Se suele usar para almacenar información en una forma no estructurada.
+					</section>
+					<section>
+                        <img src="img/plano.png" alt="Alternate Text" />
+					</section>
+				</section>	
+				<section>
+					<section>Archivo tipo XML</section>
+					<section>El lenguaje de marcado extensible (XML) permite definir y almacenar datos de forma compartible. XML admite el intercambio de información entre sistemas de computación, como sitios web, bases de datos y aplicaciones de terceros.<br>
+                        <img src="img/xml.png" alt="Alternate Text" width="300" /></section>
+				</section>
+				<section>
+					<section>
+						Archivo tipo JSON
+					</section>
+					<section>
+						El formato JSON (JavaScript Object Notation) es un formato abierto utilizado como alternativa al XML para la transferencia de datos estructurados entre un servidor de Web y una aplicación Web.<br>
+						 <img src="img/json.png" alt="Alternate Text" width="350" />
+					</section>
+				</section>
+				<section>
+					<section>
+						Archivo Parquet
+					</section>
+					<section>
+                        <img src="img/parquet.png" alt="Alternate Text" width="600" />
+					</section>
+					<section>
+						Apache Parquet es un formato de archivo en columnas que proporciona optimizaciones para acelerar las consultas. Es un formato de archivo mucho más eficaz que el archivo . csv o JSON. Para obtener más información, vea Archivos de Parquet.
+					</section>
+				</section>
+                <section>
+					<section>
+						<iframe width="714" height="384" src="https://www.youtube.com/embed/EUSf9cAq26o" title="Presentación Ingeniería Software II" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/JSON/highlight.js"></script>
+		<script src="plugin/parquet/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                transition: 'convex', // none/fade/slide/convex/concave/zoon
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+			});
+		</script>
+	</body>
+</html>
